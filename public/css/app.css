@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 8vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(57,58,59,255);
+}
+
+header h1{
+    color: white;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30vw;
+}
+
+.sec_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(220,53,69,255);
+    padding: 20px;
+    color: white;
+
+}
+
+.sec_1 img{
+    width: 20vw;
+}
+
+.sec_2{
+    background-color: ;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.sec_2 img{
+    width: 15vw;
+    border-radius: 10px;
+}
+
+
+.sec_3{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(220,53,69,255);
+    padding: 30px;
+}
+
+.sec_3 div{
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sec_3 p{
+    width: 40vh;
+}
+
+
+.sec_4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 30px;
+}
+
+.sec_4 form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sec_4 form input{
+    width: 30vw;
+    height: 8vh;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.sec_4 form input::placeholder{
+    font-weight: bold;
+}
+
+.sec_4 button{
+    width: 30vw;
+    height: 6vh;
+    background-color: rgba(220,53,69,255);
+    border: none;
+    border-radius: 3px;
+}
+
+
+footer .footer1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(44,62,80,255);
+    padding: 40px;
+    color: white;
+}
+
+footer .f{
+    width: 15vw;
+    text-align: center;
+}
+
+footer .f2 img{
+    width: 2vw;
+}
+
+footer .f3 span{
+    color: rgb(43, 226, 61);
+}
+
+footer h1{
+    font-size: small;
+    font-weight: bold;
+}
+
+footer .footer2{
+    padding: 20px;
+    background-color: rgba(26,37,47,255);
+    text-align: center;
+    color: white;
+}
+
+header input, header label{
+    display: none;
+}
+
+.logo2{
+    display: none;
+}
+
+
+@media (max-width:426px){
+    .logo2{
+        display: block;
+    }
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    nav{
+        flex-direction: column;
+        background-color: blueviolet;
+        width: 50vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -50vw;
+        align-items: center;
+        background-color: black;
+        transition: 1s;
+    }
+
+
+    header label{
+        display: block;
+        position: fixed;
+        right: 0;
+        padding: 10px;
+    }
+
+    input:checked ~ nav {
+        position: fixed;
+        left: 0;
+    }
+
+    .sec_1{
+        padding-top: 10vh;
+    }
+
+    .sec_2 div{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sec_2 div img{
+        width: 80vw;
+    }
+
+
+    .sec_3 div{
+        flex-direction: column;
+        width: 80vw;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .sec_4 form input{
+        width: 80vw;
+    }
+
+    .sec_4 button{
+        width: 60vw;
+    }
+
+    .footer1{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer1 div{
+        width: 80vw;
+    }
+
+    .footer1 .f2_soc img{
+        width: 8vw;
+    }
+    
+
+}
